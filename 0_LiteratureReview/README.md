@@ -20,10 +20,10 @@ Approaches or solutions that have been tried before on similar projects.
   - **Outcomes**:
   - **Relation to the Project**: Database for AIS input data
 
-- **Source 3**: [Title of Source 3]
+- **Source 3**: [Article: AIS, ship behaviour prediction]
 
-  - **[Link]()**
-  - **Objective**:
-  - **Methods**:
+  - **[Link](https://www.sciencedirect.com/science/article/pii/S0951832021003409)**
+  - **Objective**: An AIS-based deep learning framework for regional ship behavior prediction
+  - **Methods**: Recurrent neural networks (RNNs) ([44]) are designed to handle sequence data. The general RNN architecture is visualized in Fig. 2. As historical AIS trajectories are multivariate time series, RNNs are chosen to serve as the main deep learning architecture in the framework utilized in this study. RNNs are capable of handling time series of variable length, and can be combined with other architectures to achieve various goals. 
   - **Outcomes**:
-  - **Relation to the Project**:
+  - **Relation to the Project**: 
