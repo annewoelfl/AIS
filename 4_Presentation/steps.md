@@ -68,6 +68,16 @@
     - Tried 2_2 with 15min sets early stopping to 15 and sequence length to 45 (thats the half of the time of the set, like in the 2h sets with 60)
     - Was interested to see how the model trained on the 2h sets would perform on the 15 min set (to evaluate the need for a different training for the dynamic approach (see future work below)), but as the data input structure is different, it was not possible to directy use the models interchangeably, to have a useable product, I would need to produce a dynamic model somehow.
     - trying to assess the wrongly categorized csv and then display the corresponding color-coded trajectory so that the results are easily visible.
+  - Crunched a lot of data to get about 1000 datasets for sailing-engine or multi-classifier
+  - built sailing-engine binary classifier
+  - to check validity built sanity-check branch
+  - sanity check done by just putting random underway-using-engine files in both folders. The randomly selected files of one class should have given an output accuracy of about 0.5.
+  - sadly the output accuracy was way higher (~0.8X), that implies there is something fucky with the code
+  - found out that
+  - using train_test_split() to create a test set, then within .fit(), you're splitting again (validation_split=0.2) This means 20% of the training set is used for validation, which may lead to data leakage.
+  - splitting sequences at the sequence level (train_test_split(X, y, ...)), multiple sequences from the same vessel (or same file) could be in both the training and validation/test sets.
+  - additionally noticed that sequences are not starting with course zero and are thus not really comparable
+  - try to correct these potential sources for the overperformance
 
 8. **Results**: Present the results in a clear and easy-to-understand format. Use tables, charts, or any other visual aids that you find appropriate.
 
