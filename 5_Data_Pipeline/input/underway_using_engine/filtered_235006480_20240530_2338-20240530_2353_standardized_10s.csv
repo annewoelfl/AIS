@@ -1,4 +1,5 @@
 Timestamp,Navigational status,SOG,COG,Heading
+2024-05-30 23:38:15,Under way using engine,0.1,0.0,284.6
 2024-05-30 23:38:25,Under way using engine,0.0,0.0,282.6
 2024-05-30 23:38:35,Under way using engine,0.1,312.4,281.6
 2024-05-30 23:38:45,Under way using engine,0.075,17.30000000000001,280.85
@@ -88,4 +89,3 @@ Timestamp,Navigational status,SOG,COG,Heading
 2024-05-30 23:52:45,Under way using engine,0.1,352.3666666666667,292.26666666666665
 2024-05-30 23:52:55,Under way using engine,0.1,334.5,290.6
 2024-05-30 23:53:05,Under way using engine,0.2,14.699999999999989,286.6
-2024-05-30 23:53:15,Under way using engine,0.1,14.699999999999989,284.6
