@@ -28,7 +28,7 @@ The datasets come from the Danish Maritime Authority under http://web.ais.dk/ais
 
 - **Best Model:** [LSTM_2_2 on the 2h dataset}
 - **Evaluation Metric:** [accuracy, precision, recall, f1-score]
-- **Result:** [99%, 0.99, 0.98, 0.99]
+- **Result:** [87%, , , ]
 
 ## Documentation
 
